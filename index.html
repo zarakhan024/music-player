@@ -1,11 +1,58 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Music Player</title>
-  </head>
-  <body>
-    <h1>Hello from Electron!</h1>
-    <p>We’ll make this into a music player next.</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pixel Music Player</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+  <div id="player">
+    <div id="song-title">Song Title</div>
+    <div id="cover-area">
+      <div id="progress-overlay">
+        <div id="progress-bar">
+          <div id="progress-knob"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="control-panel">
+    <!-- Menu -->
+    <button class="menu-btn">Menu</button>
+
+    <!-- Line + Controls -->
+    <div class="line-container">
+      <div class="line"></div>
+
+      <!-- Prev -->
+      <button class="prev-btn">
+        <img src="image-content/icon-images/prev-button.png" alt="Prev" />
+      </button>
+
+      <!-- Play -->
+
+
+      <!-- Next -->
+      <button class="next-btn">
+        <img src="image-content/icon-images/in-prev-button.png" alt="Next" />
+      </button>
+    </div>
+
+    <!-- Hearts -->
+    <div class="hearts">
+      <button class="heart-btn"><img src="image-content/icon-images/heart 1.png" alt="♥"></button>
+      <button class="heart-btn"><img src="image-content/icon-images/heart 2.png" alt="♥"></button>
+      <button class="heart-btn"><img src="image-content/icon-images/heart 3.png" alt="♥"></button>
+    </div>
+  </div>
+
+
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
 </html>
